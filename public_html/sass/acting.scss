@@ -1,0 +1,188 @@
+@import 'mixins';
+
+.aside-section {
+	aside {
+		height: 150px;
+		img {
+			position: absolute;
+		}
+
+		span {
+			text-align: center;
+			color: white;
+			font-weight: 900;
+			font-size: 1.2em;
+			position: absolute;
+			padding-top: 30%;
+			left: 30%;
+		}
+
+		p {
+			position: absolute;
+			left: 40%;
+			bottom: -30%;
+		}
+	}
+
+	:hover {
+
+		#demowheel{
+			@include animation(spin-hover 2s);
+			-webkit-animation-fill-mode: forwards;
+			-moz-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+		}
+
+		#democlap {
+			opacity: 1;
+			@include transform(scale(1.1));
+		}
+	}
+}
+
+#democlap {
+	width: 80%;
+	height: 100%;
+	padding-top: 10%;
+	top: 0;
+	opacity: 0.9;
+	@include transition(all 0.2s linear)
+}
+
+#demowheel {
+	width: 40%;
+	top: 125px;
+	left: -5%;
+	@include animation(spin 3s infinite);
+
+}
+
+#promos {
+	text-align: left;
+	overflow: visible;
+	background: #222;
+	padding: 0;
+}
+
+#videos {
+	text-align: center;
+}
+
+.photo-link	{ 
+	display: block;
+	max-height: 500px;
+	margin: 0 auto;
+}
+
+.vim-link{
+
+	&::after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		margin-top: 64px;
+		margin-left: -142px;
+		pointer-events: none;
+		width: 64px;
+		height: 46px;
+		background: url("../img/icons/ico_play.png");
+		background-size: 64px 46px;
+	}
+}
+
+.vim-vid {
+	padding:5px;
+	margin:5px;
+	border:1px solid #ccc;
+	opacity: 0.8;
+	@include transition(all 0.2s);
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes spin-hover {
+	0% {
+		@include transform(rotate(135deg));
+	}
+
+	100% {
+		@include transform(rotate(-135deg) scale(1.2))
+	}
+}
+
+@-moz-keyframes spin-hover {
+	0% {
+		@include transform(rotate(135deg));
+	}
+
+	100% {
+		@include transform(rotate(-135deg) scale(1.2))
+	}
+}
+
+@keyframes spin-hover {
+	0% {
+		@include transform(rotate(135deg));
+	}
+
+	100% {
+		@include transform(rotate(-135deg) scale(1.2))
+	}
+}
+
+@-webkit-keyframes spin {
+	0%, 100% {
+    @include transform(translateX(0px) rotate(135deg));
+  }
+	50% {
+    @include transform(translateX(-15px) rotate(115deg));
+  }
+}
+
+@-moz-keyframes spin {
+	0%, 100% {
+    @include transform(translateX(0px) rotate(135deg));
+  }
+	50% {
+    @include transform(translateX(-15px) rotate(115deg));
+  }
+}
+
+@keyframes spin {
+	0%, 100% {
+    @include transform(translateX(0px) rotate(135deg));
+  }
+	50% {
+    @include transform(translateX(-15px) rotate(115deg));
+  }
+}
+
+.slick-prev, .slick-next {
+	padding: 24px !important;
+	height: 48px;
+	width: auto;
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+	    color:red !important;
+	    padding: 24px !important;
+	    content: "" !important;
+	    background: url("../img/icons/ico_arrow.png") no-repeat !important;
+	    background-size: 48px 48px !important;
+
+	}
+}
+
+	.slick-prev {
+		left: 5% !important;
+		@include transform(scaleX(-1))
+	}
+
+	.slick-next {
+		right: 5% !important;
+	}

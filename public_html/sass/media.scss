@@ -1,0 +1,120 @@
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 1220px) {
+	.content-center {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 1055px) {
+	.content-center {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 955px) {
+	aside {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 800px) {
+    /* phones */
+    html {
+    	min-width: 560px;
+    }
+
+	.content-center {
+		width: 100%;
+	}
+
+	aside {
+		display: none;
+	}
+
+    header {
+    	overflow: visible;
+	background-color: black;
+    	h1 {
+    		position: absolute;
+    		top: 0px;
+    		padding: 0 2em;
+    	}
+
+		nav {
+
+			div {
+				display: none;
+			}
+
+			span {
+				display: block;
+				visibility: visible;
+			}
+
+			a {
+				text-align: center;
+				display: block;
+				width: 100%;
+				background-color: rgba(55,55,55,0.8);
+
+				&:visited { color: black; }
+				&:link { color: black;	}
+
+				&:hover {
+					color: white;
+				}
+			}
+
+			button {
+				visibility: hidden;
+			}
+		#current-link {
+			background: $dgray;
+			color: white;
+		}
+		}
+    }
+
+    .header-cover {
+    	h2 {
+    		line-height: 1;
+    		b {
+    			font-size: 1em;
+    		}
+    	}
+    }
+
+    footer {
+    	.copy {float: none;}
+    	.credit {display: none;}
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .header-cover {
+    	h2 {
+    		line-height: 1;
+    		b {
+    			display: none;
+    		}
+
+			.logo {
+				height: 50%;
+				width: 50%;
+				opacity: 0.7;
+			}
+    	}
+
+    	.chevron {
+    		display: none;
+    	}
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}

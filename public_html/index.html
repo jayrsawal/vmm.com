@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
+    
+    <title>Victoria Marie | Home</title>
+  </head>
+
+  <body>
+    <!--CORNER RIBBON-->
+    <div class="corner-ribbon">UNDER CONSTRUCTION</div>
+    
+    <!--HEADER (NAV)-->
+    <header>
+        <h1 class="">Victoria Marie</h1>
+        <nav>
+          <span tabindex="0" class="nav-drop">
+            <div class="nav-content">
+              <a id="current-link" href="">Home</a>
+              <a href="about.html">About</a>
+              <a href="music.php">Music</a>
+              <a href="acting.php">Acting</a>
+              <a href="gallery.php">Gallery</a>
+            </div>
+          </span>
+
+          <div>
+              <a id="current-link" href="">Home</a>
+              <a href="about.html">About</a>
+              <a href="music.php">Music</a>
+              <a href="acting.php">Acting</a>
+              <a href="gallery.php">Gallery</a>
+              <a class="fancybox contact-btn" data-fancybox-type="iframe" href="contact.php">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+  
+    <!-- COVER SECTION BANNER -->
+    <section class="header-cover">
+        <div><h2><b>VICTORIA MARIE</b>
+        <br><img class="logo" src="img/icons/vm_logo_flat.png" /></div>
+        <a href="#page-top"><span class="chevron"></span></a>
+    </section>
+
+    <!--  -->
+    <div id="page-top" class="container">
+    <section class="aside-section">
+      <aside>
+        <img id="intro_head" src="img/main_head.jpg" />
+      </aside>
+
+
+      <article>
+        <h2>Welcome to Victoria Marie's Website</h2>
+        <p>Finally, a place to call home! Victoriamariemusic.com is pleased to bring you the latest updates and inside access to up and coming artist Victoria Marie. Look out for behind the scenes footage of performances, in studio recording her debut EP and the exclusive on the upcoming film premiere of her first Leading Role.</p>
+      </article>
+    </section>
+    </div>
+
+    <footer>
+    <section class="content-center">
+      <p class="align-left copy">Copyright &copy; 2015 <a href="http://victoriamariemusic.com">Victoria Marie</a>. All Rights Reserved.</p>
+      <p class="align-right credit">Developed by Jayr @ <a href="http://www.oducado.com">oducado.com</a></p>
+      <div class="clearfix"></div>
+    </section>
+    </footer>
+    
+    <!--SCRIPT-->
+    <script src="jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="javascripts/navigation.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".contact-btn").fancybox({
+          maxWidth  : 800,
+          maxHeight : 600,
+          fitToView : false,
+          width   : '70%',
+          height    : '70%',
+          autoSize  : false,
+          closeClick  : false
+        });
+      });
+    </script>
+  </body>
+
+</html>

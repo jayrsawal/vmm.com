@@ -1,0 +1,51 @@
+@import 'mixins';
+
+.aside-section {
+	min-height: 300px !important;
+	aside {
+		padding: 0;
+		max-height: 400px;
+	}
+}
+
+#videos {
+	display: block;
+	text-align: center;
+}
+
+#ytfeed {
+}
+
+.photo-link	{ 
+	display: block;
+	max-height: 500px;
+	margin: 0 auto;
+}
+
+.yt-link{
+
+	&::after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		margin-top: 64px;
+		margin-left: -142px;
+		pointer-events: none;
+		width: 64px;
+		height: 46px;
+		background: url("../img/icons/ico_play.png");
+		background-size: 64px 46px;
+	}
+}
+
+.yt-vid {
+	padding:5px;
+	margin:5px;
+	border:1px solid #ccc;
+	opacity: 0.8;
+	@include transition(all 0.2s);
+
+	&:hover {
+		opacity: 1;
+	}
+}

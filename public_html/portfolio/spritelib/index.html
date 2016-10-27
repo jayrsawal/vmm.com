@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+  <title>My Web Page</title> 
+  <link href="CSS/style.css" type="text/css" rel="stylesheet"/> 
+  <script src="JS/spritelib.js" type="text/javascript"> </script>
+  <script src="JS/spriteManager.js" type="text/javascript"> </script>
+  <script src="JS/game.js" type="text/javascript"> </script>
+</head> 
+
+<body> 
+  <canvas id="myCanvas" width="768" height="640"></canvas>
+  <p>Arrow keys to move - Space to shoot - Coins give you extra ammo - DON'T HIT THE WALLS
+  <br>By: Victor Sawal; 100429659
+
+  <script>
+    document.addEventListener("keydown", function(e) {
+
+          //console.log(key);
+          //if(key==35 || key == 36 || key == 37 || key == 39)
+          if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+              e.preventDefault();
+          }
+    }, false);
+  </script>
+</body> 
+
+</html> 

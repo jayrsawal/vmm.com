@@ -1,0 +1,53 @@
+/* line 3, ../sass/music.scss */
+.aside-section {
+  min-height: 300px !important;
+}
+/* line 5, ../sass/music.scss */
+.aside-section aside {
+  padding: 0;
+  max-height: 400px;
+}
+
+/* line 11, ../sass/music.scss */
+#videos {
+  display: block;
+  text-align: center;
+}
+
+/* line 19, ../sass/music.scss */
+.photo-link {
+  display: block;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+/* line 27, ../sass/music.scss */
+.yt-link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  margin-top: 64px;
+  margin-left: -142px;
+  pointer-events: none;
+  width: 64px;
+  height: 46px;
+  background: url("../img/icons/ico_play.png");
+  background-size: 64px 46px;
+}
+
+/* line 41, ../sass/music.scss */
+.yt-vid {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  opacity: 0.8;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 48, ../sass/music.scss */
+.yt-vid:hover {
+  opacity: 1;
+}

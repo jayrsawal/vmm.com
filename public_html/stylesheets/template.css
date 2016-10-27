@@ -1,0 +1,8 @@
+/* line 1, ../sass/template.scss */
+.header-cover {
+  height: 350px;
+}
+/* line 4, ../sass/template.scss */
+.header-cover div {
+  padding-top: 2em;
+}

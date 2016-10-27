@@ -1,0 +1,55 @@
+@import 'mixins';
+
+@mixin border-rad{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#instafeed {
+	text-align: justify;
+}
+
+.instagram {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.insta-pic {
+
+	opacity: 0.5;
+	@include transition(opacity 0.5s);
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.slick-slider {
+	margin-bottom: 0;
+}
+
+/* SLICK CAROUSEL PLUGIN */
+.slick-prev:before, .slick-next:before { 
+    color:red !important;
+}
+
+/* GALLERY */
+.photo-gallery {
+	margin-bottom: 5em;
+}
+
+.photo-link	{ 
+	padding:5px;
+	margin:5px;
+	border:1px solid #ccc;
+	display:block;
+	width: 200px;
+	height: 200px;
+	float:left;
+}
+
+.photo-link:hover { 
+	border-color:#999; 
+}

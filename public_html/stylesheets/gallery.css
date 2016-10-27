@@ -1,0 +1,58 @@
+/* line 9, ../sass/gallery.scss */
+#instafeed {
+  text-align: justify;
+}
+
+/* line 13, ../sass/gallery.scss */
+.instagram {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 19, ../sass/gallery.scss */
+.insta-pic {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+/* line 24, ../sass/gallery.scss */
+.insta-pic:hover {
+  opacity: 1;
+}
+
+/* line 29, ../sass/gallery.scss */
+.slick-slider {
+  margin-bottom: 0;
+}
+
+/* SLICK CAROUSEL PLUGIN */
+/* line 34, ../sass/gallery.scss */
+.slick-prev:before, .slick-next:before {
+  color: red !important;
+}
+
+/* GALLERY */
+/* line 39, ../sass/gallery.scss */
+.photo-gallery {
+  margin-bottom: 5em;
+}
+
+/* line 43, ../sass/gallery.scss */
+.photo-link {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: block;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+/* line 53, ../sass/gallery.scss */
+.photo-link:hover {
+  border-color: #999;
+}
